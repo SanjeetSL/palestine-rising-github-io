@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palestine Rising</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="media-styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Palestine Rising</h1>
+        <div class="logo">
+            <img src="logo.png" alt="logo" width="100" height="100">
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about-us-index.html">About</a>
+        <a href="news-index.html">News</a>
+        <a href="events-index.html">Event</a>
+        <a href="contact-us-index.html">Contact Us</a>
+        <a href="media-index.html">Media</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Media Box (Image Slider) 1 -->
+        <div class="media-box" data-modal="modal1">
+            <div class="slider-container">
+                <div class="slider" id="slider1">
+                    <div class="slide" onclick="openModal(0, 'modal1')">
+                        <img src="Media Content/Fear and condemnation in Gaza as Israel threatens to resume war/image1.jpg" alt="Image 1">
+                        <div class="hover-text">Fear and condemnation in Gaza as Israel threatens to resume war</div>
+                    </div>
+                    <div class="slide" onclick="openModal(1, 'modal1')">
+                        <img src="Media Content/Fear and condemnation in Gaza as Israel threatens to resume war/image2.jpg" alt="Image 2">
+                        <div class="hover-text">Fear and condemnation in Gaza as Israel threatens to resume war</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal1')">
+                        <img src="Media Content/Fear and condemnation in Gaza as Israel threatens to resume war/image3.jpg" alt="Image 3">
+                        <div class="hover-text">Fear and condemnation in Gaza as Israel threatens to resume war</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal1')">
+                        <img src="Media Content/Fear and condemnation in Gaza as Israel threatens to resume war/image4.jpg" alt="Image 4">
+                        <div class="hover-text">Fear and condemnation in Gaza as Israel threatens to resume war</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal1')">
+                        <img src="Media Content/Fear and condemnation in Gaza as Israel threatens to resume war/image5.jpg" alt="Image 5">
+                        <div class="hover-text">Fear and condemnation in Gaza as Israel threatens to resume war</div>
+                    </div>
+                </div>
+                <button class="prev" onclick="changeSlide(-1, 'slider1')">&lt;</button>
+                <button class="next" onclick="changeSlide(1, 'slider1')">&gt;</button>
+            </div>
+        </div>
+
+
+        <!-- Fullscreen Modal 1 -->
+        <div class="image-modal" id="modal1">
+            <button class="modal-close" onclick="closeModal('modal1')">X</button>
+            <button class="modal-prev" onclick="changeModalSlide(-1, 'modal1')">&lt;</button>
+            <div class="modal-slider-container">
+                <div class="modal-slider">
+                    <div class="modal-slide">
+                        <img src="Media Content/Fear and condemnation in Gaza as Israel threatens to resume war/image1.jpg" alt="Image 1">
+                        <div class="modal-hover-text">Fear and condemnation in Gaza as Israel threatens to resume war</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Fear and condemnation in Gaza as Israel threatens to resume war/image2.jpg" alt="Image 2">
+                        <div class="modal-hover-text">Fear and condemnation in Gaza as Israel threatens to resume war</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Fear and condemnation in Gaza as Israel threatens to resume war/image3.jpg" alt="Image 3">
+                        <div class="modal-hover-text">Fear and condemnation in Gaza as Israel threatens to resume war</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Fear and condemnation in Gaza as Israel threatens to resume war/image4.jpg" alt="Image 4">
+                        <div class="modal-hover-text">Fear and condemnation in Gaza as Israel threatens to resume war</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Fear and condemnation in Gaza as Israel threatens to resume war/image5.jpg" alt="Image 5">
+                        <div class="modal-hover-text">Fear and condemnation in Gaza as Israel threatens to resume war</div>
+                    </div>
+                </div>
+            </div>
+            <button class="modal-next" onclick="changeModalSlide(1, 'modal1')">&gt;</button>
+        </div>
+
+
+        <!-- Media Box (Image Slider) 2 -->
+        <div class="media-box" data-modal="modal2">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide" onclick="openModal(0, 'modal2')">
+                        <img src="Media Content/Displaced Palestinians wait for aid amid the rubble of Gaza’s destruction/image1.jpg" alt="Image 1">
+                        <div class="hover-text">Displaced Palestinians wait for aid amid the rubble of Gaza’s destruction</div>
+                    </div>
+                    <div class="slide" onclick="openModal(1, 'modal2')">
+                        <img src="Media Content/Displaced Palestinians wait for aid amid the rubble of Gaza’s destruction/image2.jpg" alt="Image 2">
+                        <div class="hover-text">Displaced Palestinians wait for aid amid the rubble of Gaza’s destruction</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal2')">
+                        <img src="Media Content/Displaced Palestinians wait for aid amid the rubble of Gaza’s destruction/image3.jpg" alt="Image 3">
+                        <div class="hover-text">Displaced Palestinians wait for aid amid the rubble of Gaza’s destruction</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal2')">
+                        <img src="Media Content/Displaced Palestinians wait for aid amid the rubble of Gaza’s destruction/image4.jpg" alt="Image 4">
+                        <div class="hover-text">Displaced Palestinians wait for aid amid the rubble of Gaza’s destruction</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal2')">
+                        <img src="Media Content/Displaced Palestinians wait for aid amid the rubble of Gaza’s destruction/image5.jpg" alt="Image 5">
+                        <div class="hover-text">Displaced Palestinians wait for aid amid the rubble of Gaza’s destruction</div>
+                    </div>
+                </div>
+                <button class="prev" onclick="changeSlide(-1, 'slider2')">&lt;</button>
+                <button class="next" onclick="changeSlide(1, 'slider2')">&gt;</button>
+            </div>
+        </div>
+
+
+        <!-- Fullscreen Modal 2 -->
+        <div class="image-modal" id="modal2">
+            <button class="modal-close" onclick="closeModal('modal2')">X</button>
+            <button class="modal-prev" onclick="changeModalSlide(-1, 'modal2')">&lt;</button>
+            <div class="modal-slider-container">
+                <div class="modal-slider">
+                    <div class="modal-slide">
+                        <img src="Media Content/Displaced Palestinians wait for aid amid the rubble of Gaza’s destruction/image1.jpg" alt="Image 1">
+                        <div class="modal-hover-text">Displaced Palestinians wait for aid amid the rubble of Gaza’s destruction</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Displaced Palestinians wait for aid amid the rubble of Gaza’s destruction/image2.jpg" alt="Image 2">
+                        <div class="modal-hover-text">Displaced Palestinians wait for aid amid the rubble of Gaza’s destruction</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Displaced Palestinians wait for aid amid the rubble of Gaza’s destruction/image3.jpg" alt="Image 3">
+                        <div class="modal-hover-text">Displaced Palestinians wait for aid amid the rubble of Gaza’s destruction</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Displaced Palestinians wait for aid amid the rubble of Gaza’s destruction/image4.jpg" alt="Image 4">
+                        <div class="modal-hover-text">Displaced Palestinians wait for aid amid the rubble of Gaza’s destruction</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Displaced Palestinians wait for aid amid the rubble of Gaza’s destruction/image5.jpg" alt="Image 5">
+                        <div class="modal-hover-text">Displaced Palestinians wait for aid amid the rubble of Gaza’s destruction</div>
+                    </div>
+                </div>
+            </div>
+            <button class="modal-next" onclick="changeModalSlide(1, 'modal2')">&gt;</button>
+        </div>
+
+
+        <!-- Media Box (Image Slider) 3 -->
+        <div class="media-box" data-modal="modal3">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide" onclick="openModal(0, 'modal3')">
+                        <img src="Media Content/Bittersweet homecoming for Palestinians returning to Gaza City/image1.jpg" alt="Image 1">
+                        <div class="hover-text">Bittersweet homecoming for Palestinians returning to Gaza City</div>
+                    </div>
+                    <div class="slide" onclick="openModal(1, 'modal3')">
+                        <img src="Media Content/Bittersweet homecoming for Palestinians returning to Gaza City/image2.jpg" alt="Image 2">
+                        <div class="hover-text">Bittersweet homecoming for Palestinians returning to Gaza City</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal3')">
+                        <img src="Media Content/Bittersweet homecoming for Palestinians returning to Gaza City/image3.jpg" alt="Image 3">
+                        <div class="hover-text">Bittersweet homecoming for Palestinians returning to Gaza City</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal3')">
+                        <img src="Media Content/Bittersweet homecoming for Palestinians returning to Gaza City/image4.jpg" alt="Image 4">
+                        <div class="hover-text">Bittersweet homecoming for Palestinians returning to Gaza City</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal3')">
+                        <img src="Media Content/Bittersweet homecoming for Palestinians returning to Gaza City/image5.jpg" alt="Image 5">
+                        <div class="hover-text">Bittersweet homecoming for Palestinians returning to Gaza City</div>
+                    </div>
+                </div>
+                <button class="prev" onclick="changeSlide(-1, 'slider3')">&lt;</button>
+                <button class="next" onclick="changeSlide(1, 'slider3')">&gt;</button>
+            </div>
+        </div>
+
+
+        <!-- Fullscreen Modal 3 -->
+        <div class="image-modal" id="modal3">
+            <button class="modal-close" onclick="closeModal('modal3')">X</button>
+            <button class="modal-prev" onclick="changeModalSlide(-1, 'modal3')">&lt;</button>
+            <div class="modal-slider-container">
+                <div class="modal-slider">
+                    <div class="modal-slide">
+                        <img src="Media Content/Bittersweet homecoming for Palestinians returning to Gaza City/image1.jpg" alt="Image 1">
+                        <div class="modal-hover-text">Bittersweet homecoming for Palestinians returning to Gaza City</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Bittersweet homecoming for Palestinians returning to Gaza City/image2.jpg" alt="Image 2">
+                        <div class="modal-hover-text">Bittersweet homecoming for Palestinians returning to Gaza City</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Bittersweet homecoming for Palestinians returning to Gaza City/image3.jpg" alt="Image 3">
+                        <div class="modal-hover-text">Bittersweet homecoming for Palestinians returning to Gaza City</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Bittersweet homecoming for Palestinians returning to Gaza City/image4.jpg" alt="Image 4">
+                        <div class="modal-hover-text">Bittersweet homecoming for Palestinians returning to Gaza City</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Bittersweet homecoming for Palestinians returning to Gaza City/image5.jpg" alt="Image 5">
+                        <div class="modal-hover-text">Bittersweet homecoming for Palestinians returning to Gaza City</div>
+                    </div>
+                </div>
+            </div>
+            <button class="modal-next" onclick="changeModalSlide(1, 'modal3')">&gt;</button>
+        </div>
+
+
+        <!-- Media Box (Image Slider) 4 -->
+        <div class="media-box" data-modal="modal4">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide" onclick="openModal(0, 'modal4')">
+                        <img src="Media Content/Devastated roads and lurking bombs hindering Gaza aid effort/image1.jpg" alt="Image 1">
+                        <div class="hover-text">Devastated roads and lurking bombs hindering Gaza aid effort</div>
+                    </div>
+                    <div class="slide" onclick="openModal(1, 'modal4')">
+                        <img src="Media Content/Devastated roads and lurking bombs hindering Gaza aid effort/image2.jpg" alt="Image 2">
+                        <div class="hover-text">Devastated roads and lurking bombs hindering Gaza aid effort</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal4')">
+                        <img src="Media Content/Devastated roads and lurking bombs hindering Gaza aid effort/image3.jpg" alt="Image 3">
+                        <div class="hover-text">Devastated roads and lurking bombs hindering Gaza aid effort</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal4')">
+                        <img src="Media Content/Devastated roads and lurking bombs hindering Gaza aid effort/image4.jpg" alt="Image 4">
+                        <div class="hover-text">Devastated roads and lurking bombs hindering Gaza aid effort</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal4')">
+                        <img src="Media Content/Devastated roads and lurking bombs hindering Gaza aid effort/image5.jpg" alt="Image 5">
+                        <div class="hover-text">Devastated roads and lurking bombs hindering Gaza aid effort</div>
+                    </div>
+                </div>
+                <button class="prev" onclick="changeSlide(-1, 'slider4')">&lt;</button>
+                <button class="next" onclick="changeSlide(1, 'slider4')">&gt;</button>
+            </div>
+        </div>
+
+
+        <!-- Fullscreen Modal 4 -->
+        <div class="image-modal" id="modal4">
+            <button class="modal-close" onclick="closeModal('modal4')">X</button>
+            <button class="modal-prev" onclick="changeModalSlide(-1, 'modal4')">&lt;</button>
+            <div class="modal-slider-container">
+                <div class="modal-slider">
+                    <div class="modal-slide">
+                        <img src="Media Content/Devastated roads and lurking bombs hindering Gaza aid effort/image1.jpg" alt="Image 1">
+                        <div class="modal-hover-text">Devastated roads and lurking bombs hindering Gaza aid effort</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Devastated roads and lurking bombs hindering Gaza aid effort/image2.jpg" alt="Image 2">
+                        <div class="modal-hover-text">Devastated roads and lurking bombs hindering Gaza aid effort</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Devastated roads and lurking bombs hindering Gaza aid effort/image3.jpg" alt="Image 3">
+                        <div class="modal-hover-text">Devastated roads and lurking bombs hindering Gaza aid effort</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Devastated roads and lurking bombs hindering Gaza aid effort/image4.jpg" alt="Image 4">
+                        <div class="modal-hover-text">Devastated roads and lurking bombs hindering Gaza aid effort</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Devastated roads and lurking bombs hindering Gaza aid effort/image5.jpg" alt="Image 5">
+                        <div class="modal-hover-text">Devastated roads and lurking bombs hindering Gaza aid effort</div>
+                    </div>
+                </div>
+            </div>
+            <button class="modal-next" onclick="changeModalSlide(1, 'modal4')">&gt;</button>
+        </div>
+
+
+        <!-- Media Box (Image Slider) 5 -->
+        <div class="media-box" data-modal="modal5">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide" onclick="openModal(0, 'modal5')">
+                        <img src="Media Content/Israel continues Jenin raid as two Palestinians killed in West Bank/image1.jpg" alt="Image 1">
+                        <div class="hover-text">Israel continues Jenin raid as two Palestinians killed in West Bank</div>
+                    </div>
+                    <div class="slide" onclick="openModal(1, 'modal5')">
+                        <img src="Media Content/Israel continues Jenin raid as two Palestinians killed in West Bank/image2.jpg" alt="Image 2">
+                        <div class="hover-text">Israel continues Jenin raid as two Palestinians killed in West Bank</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal5')">
+                        <img src="Media Content/Israel continues Jenin raid as two Palestinians killed in West Bank/image3.jpg" alt="Image 3">
+                        <div class="hover-text">Israel continues Jenin raid as two Palestinians killed in West Bank</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal5')">
+                        <img src="Media Content/Israel continues Jenin raid as two Palestinians killed in West Bank/image4.jpg" alt="Image 4">
+                        <div class="hover-text">Israel continues Jenin raid as two Palestinians killed in West Bank</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal5')">
+                        <img src="Media Content/Israel continues Jenin raid as two Palestinians killed in West Bank/image5.jpg" alt="Image 5">
+                        <div class="hover-text">Israel continues Jenin raid as two Palestinians killed in West Bank</div>
+                    </div>
+                </div>
+                <button class="prev" onclick="changeSlide(-1, 'slider5')">&lt;</button>
+                <button class="next" onclick="changeSlide(1, 'slider5')">&gt;</button>
+            </div>
+        </div>
+
+
+        <!-- Fullscreen Modal 5 -->
+        <div class="image-modal" id="modal5">
+            <button class="modal-close" onclick="closeModal('modal5')">X</button>
+            <button class="modal-prev" onclick="changeModalSlide(-1, 'modal5')">&lt;</button>
+            <div class="modal-slider-container">
+                <div class="modal-slider">
+                    <div class="modal-slide">
+                        <img src="Media Content/Israel continues Jenin raid as two Palestinians killed in West Bank/image1.jpg" alt="Image 1">
+                        <div class="modal-hover-text">Israel continues Jenin raid as two Palestinians killed in West Bank</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Israel continues Jenin raid as two Palestinians killed in West Bank/image2.jpg" alt="Image 2">
+                        <div class="modal-hover-text">Israel continues Jenin raid as two Palestinians killed in West Bank</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Israel continues Jenin raid as two Palestinians killed in West Bank/image3.jpg" alt="Image 3">
+                        <div class="modal-hover-text">Israel continues Jenin raid as two Palestinians killed in West Bank</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Israel continues Jenin raid as two Palestinians killed in West Bank/image4.jpg" alt="Image 4">
+                        <div class="modal-hover-text">Israel continues Jenin raid as two Palestinians killed in West Bank</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Israel continues Jenin raid as two Palestinians killed in West Banky/image5.jpg" alt="Image 5">
+                        <div class="modal-hover-text">Israel continues Jenin raid as two Palestinians killed in West Bank</div>
+                    </div>
+                </div>
+            </div>
+            <button class="modal-next" onclick="changeModalSlide(1, 'modal5')">&gt;</button>
+        </div>
+
+
+        <!-- Media Box (Image Slider) 6 -->
+        <div class="media-box" data-modal="modal6">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide" onclick="openModal(0, 'modal6')">
+                        <img src="Media Content/Israel’s scorched earth campaign leaves Gaza in ruins/image1.jpg" alt="Image 1">
+                        <div class="hover-text">Israel’s scorched earth campaign leaves Gaza in ruins</div>
+                    </div>
+                    <div class="slide" onclick="openModal(1, 'modal6')">
+                        <img src="Media Content/Israel’s scorched earth campaign leaves Gaza in ruins/image2.jpg" alt="Image 2">
+                        <div class="hover-text">Israel’s scorched earth campaign leaves Gaza in ruins</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal6')">
+                        <img src="Media Content/Israel’s scorched earth campaign leaves Gaza in ruins/image3.jpg" alt="Image 3">
+                        <div class="hover-text">Israel’s scorched earth campaign leaves Gaza in ruins</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal6')">
+                        <img src="Media Content/Israel’s scorched earth campaign leaves Gaza in ruins/image4.jpg" alt="Image 4">
+                        <div class="hover-text">Israel’s scorched earth campaign leaves Gaza in ruins</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal6')">
+                        <img src="Media Content/Israel’s scorched earth campaign leaves Gaza in ruins/image5.jpg" alt="Image 5">
+                        <div class="hover-text">Israel’s scorched earth campaign leaves Gaza in ruins</div>
+                    </div>
+                </div>
+                <button class="prev" onclick="changeSlide(-1, 'slider6')">&lt;</button>
+                <button class="next" onclick="changeSlide(1, 'slider6')">&gt;</button>
+            </div>
+        </div>
+
+
+        <!-- Fullscreen Modal 6 -->
+        <div class="image-modal" id="modal6">
+            <button class="modal-close" onclick="closeModal('modal6')">X</button>
+            <button class="modal-prev" onclick="changeModalSlide(-1, 'modal6')">&lt;</button>
+            <div class="modal-slider-container">
+                <div class="modal-slider">
+                    <div class="modal-slide">
+                        <img src="Media Content/Israel’s scorched earth campaign leaves Gaza in ruins/image1.jpg" alt="Image 1">
+                        <div class="modal-hover-text">Israel’s scorched earth campaign leaves Gaza in ruins</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Israel’s scorched earth campaign leaves Gaza in ruins/image2.jpg" alt="Image 2">
+                        <div class="modal-hover-text">Israel’s scorched earth campaign leaves Gaza in ruins</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Israel’s scorched earth campaign leaves Gaza in ruins/image3.jpg" alt="Image 3">
+                        <div class="modal-hover-text">Israel’s scorched earth campaign leaves Gaza in ruins</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Israel’s scorched earth campaign leaves Gaza in ruins/image4.jpg" alt="Image 4">
+                        <div class="modal-hover-text">Israel’s scorched earth campaign leaves Gaza in ruins</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Israel’s scorched earth campaign leaves Gaza in ruins/image5.jpg" alt="Image 5">
+                        <div class="modal-hover-text">Israel’s scorched earth campaign leaves Gaza in ruins</div>
+                    </div>
+                </div>
+            </div>
+            <button class="modal-next" onclick="changeModalSlide(1, 'modal6')">&gt;</button>
+        </div>
+
+
+        <!-- Media Box (Image Slider) 7 -->
+        <div class="media-box" data-modal="modal7">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide" onclick="openModal(0, 'modal7')">
+                        <img src="Media Content/Long walk home Palestinians march on foot to north Gaza/image1.jpg" alt="Image 1">
+                        <div class="hover-text">Long walk home Palestinians march on foot to north Gaza</div>
+                    </div>
+                    <div class="slide" onclick="openModal(1, 'modal7')">
+                        <img src="Media Content/Long walk home Palestinians march on foot to north Gaza/image2.jpg" alt="Image 2">
+                        <div class="hover-text">Long walk home Palestinians march on foot to north Gaza</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal7')">
+                        <img src="Media Content/Long walk home Palestinians march on foot to north Gaza/image3.jpg" alt="Image 3">
+                        <div class="hover-text">Long walk home Palestinians march on foot to north Gaza</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal7')">
+                        <img src="Media Content/Long walk home Palestinians march on foot to north Gaza/image4.jpg" alt="Image 4">
+                        <div class="hover-text">Long walk home Palestinians march on foot to north Gaza</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal7')">
+                        <img src="Media Content/Long walk home Palestinians march on foot to north Gaza/image5.jpg" alt="Image 5">
+                        <div class="hover-text">Long walk home Palestinians march on foot to north Gaza</div>
+                    </div>
+                </div>
+                <button class="prev" onclick="changeSlide(-1, 'slider7')">&lt;</button>
+                <button class="next" onclick="changeSlide(1, 'slider7')">&gt;</button>
+            </div>
+        </div>
+
+
+        <!-- Fullscreen Modal 7 -->
+        <div class="image-modal" id="modal7">
+            <button class="modal-close" onclick="closeModal('modal7')">X</button>
+            <button class="modal-prev" onclick="changeModalSlide(-1, 'modal7')">&lt;</button>
+            <div class="modal-slider-container">
+                <div class="modal-slider">
+                    <div class="modal-slide">
+                        <img src="Media Content/Long walk home Palestinians march on foot to north Gaza/image1.jpg" alt="Image 1">
+                        <div class="modal-hover-text">Long walk home Palestinians march on foot to north Gaza</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Long walk home Palestinians march on foot to north Gaza/image2.jpg" alt="Image 2">
+                        <div class="modal-hover-text">Long walk home Palestinians march on foot to north Gaza</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Long walk home Palestinians march on foot to north Gaza/image3.jpg" alt="Image 3">
+                        <div class="modal-hover-text">Long walk home Palestinians march on foot to north Gaza</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Long walk home Palestinians march on foot to north Gaza/image4.jpg" alt="Image 4">
+                        <div class="modal-hover-text">Long walk home Palestinians march on foot to north Gaza</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Long walk home Palestinians march on foot to north Gaza/image5.jpg" alt="Image 5">
+                        <div class="modal-hover-text">Long walk home Palestinians march on foot to north Gaza</div>
+                    </div>
+                </div>
+            </div>
+            <button class="modal-next" onclick="changeModalSlide(1, 'modal7')">&gt;</button>
+        </div>
+
+
+        <!-- Media Box (Image Slider) 8 -->
+        <div class="media-box" data-modal="modal8">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide" onclick="openModal(0, 'modal8')">
+                        <img src="Media Content/Strong winds and heavy rain pummelling Gaza’s survivors/image1.jpg" alt="Image 1">
+                        <div class="hover-text">Strong winds and heavy rain pummelling Gaza’s survivors</div>
+                    </div>
+                    <div class="slide" onclick="openModal(1, 'modal8')">
+                        <img src="Media Content/Strong winds and heavy rain pummelling Gaza’s survivors/image2.jpg" alt="Image 2">
+                        <div class="hover-text">BStrong winds and heavy rain pummelling Gaza’s survivors</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal8')">
+                        <img src="Media Content/Strong winds and heavy rain pummelling Gaza’s survivors/image3.jpg" alt="Image 3">
+                        <div class="hover-text">Strong winds and heavy rain pummelling Gaza’s survivors</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal8')">
+                        <img src="Media Content/Strong winds and heavy rain pummelling Gaza’s survivors/image4.jpg" alt="Image 4">
+                        <div class="hover-text">Strong winds and heavy rain pummelling Gaza’s survivors</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal8')">
+                        <img src="Media Content/Strong winds and heavy rain pummelling Gaza’s survivors/image5.jpg" alt="Image 5">
+                        <div class="hover-text">Strong winds and heavy rain pummelling Gaza’s survivors</div>
+                    </div>
+                </div>
+                <button class="prev" onclick="changeSlide(-1, 'slider8')">&lt;</button>
+                <button class="next" onclick="changeSlide(1, 'slider8')">&gt;</button>
+            </div>
+        </div>
+
+
+        <!-- Fullscreen Modal 8 -->
+        <div class="image-modal" id="modal8">
+            <button class="modal-close" onclick="closeModal('modal8')">X</button>
+            <button class="modal-prev" onclick="changeModalSlide(-1, 'modal8')">&lt;</button>
+            <div class="modal-slider-container">
+                <div class="modal-slider">
+                    <div class="modal-slide">
+                        <img src="Media Content/Strong winds and heavy rain pummelling Gaza’s survivors/image1.jpg" alt="Image 1">
+                        <div class="modal-hover-text">Strong winds and heavy rain pummelling Gaza’s survivors</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Strong winds and heavy rain pummelling Gaza’s survivors/image2.jpg" alt="Image 2">
+                        <div class="modal-hover-text">Strong winds and heavy rain pummelling Gaza’s survivors</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Strong winds and heavy rain pummelling Gaza’s survivors/image3.jpg" alt="Image 3">
+                        <div class="modal-hover-text">Strong winds and heavy rain pummelling Gaza’s survivors</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Strong winds and heavy rain pummelling Gaza’s survivors/image4.jpg" alt="Image 4">
+                        <div class="modal-hover-text">Strong winds and heavy rain pummelling Gaza’s survivors</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Strong winds and heavy rain pummelling Gaza’s survivors/image5.jpg" alt="Image 5">
+                        <div class="modal-hover-text">Strong winds and heavy rain pummelling Gaza’s survivors</div>
+                    </div>
+                </div>
+            </div>
+            <button class="modal-next" onclick="changeModalSlide(1, 'modal8')">&gt;</button>
+        </div>
+
+
+        <!-- Media Box (Image Slider) 9 -->
+        <div class="media-box" data-modal="modal9">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide" onclick="openModal(0, 'modal9')">
+                        <img src="Media Content/Violent Israeli raids forcibly displace 26,000 Palestinians in West Bank/image1.jpg" alt="Image 1">
+                        <div class="hover-text">Violent Israeli raids forcibly displace 26,000 Palestinians in West Bank</div>
+                    </div>
+                    <div class="slide" onclick="openModal(1, 'modal9')">
+                        <img src="Media Content/Violent Israeli raids forcibly displace 26,000 Palestinians in West Bank/image2.jpg" alt="Image 2">
+                        <div class="hover-text">Violent Israeli raids forcibly displace 26,000 Palestinians in West Bank</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal9')">
+                        <img src="Media Content/Violent Israeli raids forcibly displace 26,000 Palestinians in West Bank/image3.jpg" alt="Image 3">
+                        <div class="hover-text">Violent Israeli raids forcibly displace 26,000 Palestinians in West Bank</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal9')">
+                        <img src="Media Content/Violent Israeli raids forcibly displace 26,000 Palestinians in West Bank/image4.jpg" alt="Image 4">
+                        <div class="hover-text">Violent Israeli raids forcibly displace 26,000 Palestinians in West Bank</div>
+                    </div>
+                    <div class="slide" onclick="openModal(2, 'modal9')">
+                        <img src="Media Content/Violent Israeli raids forcibly displace 26,000 Palestinians in West Bank/image5.jpg" alt="Image 5">
+                        <div class="hover-text">Violent Israeli raids forcibly displace 26,000 Palestinians in West Bank</div>
+                    </div>
+                </div>
+                <button class="prev" onclick="changeSlide(-1, 'slider9')">&lt;</button>
+                <button class="next" onclick="changeSlide(1, 'slider9')">&gt;</button>
+            </div>
+        </div>
+
+
+        <!-- Fullscreen Modal 9 -->
+        <div class="image-modal" id="modal9">
+            <button class="modal-close" onclick="closeModal('modal9')">X</button>
+            <button class="modal-prev" onclick="changeModalSlide(-1, 'modal9')">&lt;</button>
+            <div class="modal-slider-container">
+                <div class="modal-slider">
+                    <div class="modal-slide">
+                        <img src="Media Content/Violent Israeli raids forcibly displace 26,000 Palestinians in West Bank/image1.jpg" alt="Image 1">
+                        <div class="modal-hover-text">Violent Israeli raids forcibly displace 26,000 Palestinians in West Bank</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Violent Israeli raids forcibly displace 26,000 Palestinians in West Bank/image2.jpg" alt="Image 2">
+                        <div class="modal-hover-text">Violent Israeli raids forcibly displace 26,000 Palestinians in West Bank</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Violent Israeli raids forcibly displace 26,000 Palestinians in West Bank/image3.jpg" alt="Image 3">
+                        <div class="modal-hover-text">Violent Israeli raids forcibly displace 26,000 Palestinians in West Bank</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Violent Israeli raids forcibly displace 26,000 Palestinians in West Bank/image4.jpg" alt="Image 4">
+                        <div class="modal-hover-text">Violent Israeli raids forcibly displace 26,000 Palestinians in West Bank</div>
+                    </div>
+                    <div class="modal-slide">
+                        <img src="Media Content/Violent Israeli raids forcibly displace 26,000 Palestinians in West Bank/image5.jpg" alt="Image 5">
+                        <div class="modal-hover-text">Violent Israeli raids forcibly displace 26,000 Palestinians in West Bank</div>
+                    </div>
+                </div>
+            </div>
+            <button class="modal-next" onclick="changeModalSlide(1, 'modal9')">&gt;</button>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Left Side: Logo and Footer Text -->
+        <div class="footer-section">
+            <div class="logo">
+                <img src="logo.png" alt="logo" width="100" height="100">
+            </div>
+            <div class="footer-text">
+                <p>© 2025 Palestine Rising</p>
+                <p>All rights reserved.</p>
+            </div>
+        </div>
+
+        <!-- Center: Message -->
+        <div class="footer-center">Empowering the Voices of Palestine</div>
+
+        <!-- Right Side: Social Media -->
+        <div class="footer-right">
+            <p>Follow us on social media:</p>
+            <div class="footer-icons">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-x-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="media-script.js"></script>
+
+</body>
+</html>

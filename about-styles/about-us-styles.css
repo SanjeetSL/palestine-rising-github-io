@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #cc0000, #008000);
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #166534;
+    margin-left: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #008000;
+    padding: 15px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav a:hover {
+    color: #ffcc00;
+}
+
+/* Content Container */
+.content {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    padding-bottom: 140px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-left: 5px solid #1a3d2f; /* Dark green left border */
+    background: #d7d7d7;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+    .section:hover {
+        transform: scale(1.02);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+/* Headings */
+h2 {
+    color: #1a3d2f;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}  
+
+/* Layout for Goals & Team, Values & Impact */
+.goals-team,
+.values-impact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+    .goals-team .section,
+    .values-impact .section {
+        flex: 1;
+        min-width: 280px;
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .goals-team,
+    .values-impact {
+        flex-direction: column;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #212325;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.footer-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+    .footer-section .logo img {
+        border-radius: 50%;
+        background-color: #383737;
+        padding: 10px;
+        display: block;
+    }
+
+.footer-text {
+    text-align: left;
+}
+
+/* Footer Center */
+.footer-center {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Social Media Section */
+.footer-right {
+    text-align: right;
+}
+
+    .footer-right p {
+        margin-bottom: 5px;
+    }
+
+/* Footer Social Media Icons */
+.footer-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+    .footer-icons a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 50%;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+        /* Facebook */
+        .footer-icons a.fa-facebook {
+            background-color: #3b5998;
+            color: white;
+        }
+
+            .footer-icons a.fa-facebook:hover {
+                background-color: #2d4373;
+            }
+
+        /* X (Twitter) */
+        .footer-icons a.fa-x-twitter {
+            background-color: black;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+            .footer-icons a.fa-x-twitter:hover {
+                background-color: #222;
+            }
+
+        /* Instagram */
+        .footer-icons a.fa-instagram {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            color: white;
+        }
+
+            .footer-icons a.fa-instagram:hover {
+                filter: brightness(1.2);
+            }
+
+        /* Hover Effect */
+        .footer-icons a:hover {
+            transform: scale(1.2);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Click Effect */
+        .footer-icons a:active {
+            transform: scale(1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .media-box {
+        width: 100%;
+    }
+
+    .prev, .next {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .modal-prev, .modal-next {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .modal-close {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+
+    .media-box .actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

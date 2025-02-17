@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Palestine Rising - Events, Webinars, Protests, and Discussions in support of Palestine.">
+    <meta name="keywords" content="Palestine, Events, Webinars, Protests, Discussions, Support, Relief Efforts">
+    <meta name="author" content="Palestine Rising">
+    <title>Palestine Rising</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            text-align: center;
+            font-size: 16px;
+            color: #333;
+            height: 100%;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(90deg, #cc0000, #008000);
+            color: white;
+            padding: 20px;
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #166534;
+            margin-left: auto;
+        }
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #008000;
+            padding: 15px;
+        }
+
+            nav a {
+                color: white;
+                margin: 0 20px;
+                text-decoration: none;
+                font-size: 18px;
+                transition: color 0.3s;
+            }
+
+                nav a:hover {
+                    color: #ffcc00;
+                }
+
+                nav a:focus {
+                    outline: 2px solid #ffcc00;
+                }
+
+        .content-wrapper {
+            display: flex;
+            margin: 20px;
+            padding-bottom: 140px;
+        }
+
+        aside {
+            width: 25%;
+            background: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+            border-right: 2px solid #ddd;
+        }
+
+        .ad {
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+            .ad img {
+                width: 100%;
+                border-radius: 5px;
+            }
+
+        main {
+            width: 75%;
+            padding: 20px;
+        }
+
+        .event {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+            .event:hover {
+                transform: scale(1.05);
+            }
+
+            .event img {
+                width: 100%;
+                border-radius: 10px;
+                margin-bottom: 15px;
+            }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #212325;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+            z-index: 1000; /* Ensure it stays above other elements */
+        }
+
+        .footer-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+            .footer-section .logo img {
+                border-radius: 50%;
+                background-color: #383737;
+                padding: 10px;
+                display: block;
+            }
+
+        .footer-text {
+            text-align: left;
+        }
+
+        /* Footer Center */
+        .footer-center {
+            flex: 1;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* Social Media Section */
+        .footer-right {
+            text-align: right;
+        }
+
+            .footer-right p {
+                margin-bottom: 5px;
+            }
+
+        /* Footer Social Media Icons */
+        .footer-icons {
+            display: flex;
+            gap: 15px;
+            justify-content: flex-end;
+        }
+
+            .footer-icons a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+                border-radius: 50%;
+                text-decoration: none;
+                transition: all 0.3s ease-in-out;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            }
+
+                /* Facebook */
+                .footer-icons a.fa-facebook {
+                    background-color: #3b5998;
+                    color: white;
+                }
+
+                    .footer-icons a.fa-facebook:hover {
+                        background-color: #2d4373;
+                    }
+
+                /* X (Twitter) */
+                .footer-icons a.fa-x-twitter {
+                    background-color: black;
+                    color: white;
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+
+                    .footer-icons a.fa-x-twitter:hover {
+                        background-color: #222;
+                    }
+
+                /* Instagram */
+                .footer-icons a.fa-instagram {
+                    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+                    color: white;
+                }
+
+                    .footer-icons a.fa-instagram:hover {
+                        filter: brightness(1.2);
+                    }
+
+                /* Hover Effect */
+                .footer-icons a:hover {
+                    transform: scale(1.2);
+                    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+                }
+
+                /* Click Effect */
+                .footer-icons a:active {
+                    transform: scale(1);
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                }
+
+        /* Responsive Adjustments */
+        @media (max-width: 600px) {
+            .media-box {
+                width: 100%;
+            }
+
+            .prev, .next {
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            .modal-prev, .modal-next {
+                padding: 10px;
+                font-size: 18px;
+            }
+
+            .modal-close {
+                font-size: 16px;
+                padding: 6px 10px;
+            }
+
+            .media-box .actions {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        #news-ticker {
+            background: black;
+            color: white;
+            padding: 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100%;
+            text-align: center;
+            position: relative;
+        }
+
+        .ticker-content {
+            display: inline-block;
+            padding-left: 100%;
+            animation: ticker 10s linear infinite;
+        }
+
+        @keyframes ticker {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .donation-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+            .donation-container a {
+                display: inline-block;
+                background-color: #ff6f00;
+                color: white;
+                padding: 10px 20px;
+                font-size: 16px;
+                border-radius: 5px;
+                text-decoration: none;
+                margin-top: 10px;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Palestine Rising</h1>
+        <div class="logo">
+            <img src="logo.png" alt="logo" width="100" height="100">
+        </div>
+    </header>
+
+    <nav class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="about-us-index.html">About</a>
+        <a href="news-index.html">News</a>
+        <a href="events-index.html">Event</a>
+        <a href="contact-us-index.html">Contact Us</a>
+        <a href="media-index.html">Media</a>
+    </nav>
+    
+    <div id="news-ticker">
+        <span class="ticker-content">Breaking News: Join our upcoming protest this Sunday! | Donate now to support relief efforts.</span>
+    </div>
+
+    <div class="content-wrapper">
+        <aside>
+            <h2>Partners in Humanity</h2>
+            <a href="https://promiserelief.org/palestine-fundraiser/" target="_blank">
+                <div class="ad">
+                    <img src="Events Content/Ads/ads1.png" alt="Support Palestine Relief Efforts">
+                    <p>Support Palestine Relief Efforts</p>
+                </div>
+            </a>
+            <a href="https://buildpalestine.com/2021/05/15/trusted-organizations-to-donate-to-palestine/" target="_blank">
+                <div class="ad">
+                    <img src="Events Content/Ads/ads2.png" alt="Aid Palestine’s Humanitarian Cause">
+                    <p>Aid Palestine’s Humanitarian Cause</p>
+                </div>
+            </a>
+            <a href="https://gogetfunding.com/campaigns/?country=ps" target="_blank">
+                <div class="ad">
+                    <img src="Events Content/Ads/ads3.png" alt="Join Our Charity Event">
+                    <p>Join Our Charity Event</p>
+                </div>
+            </a>
+            <a href="https://palestinetoolkit.org/mobilise-from-home/direct-aid-for-palestine/" target="_blank">
+                <div class="ad">
+                    <img src="Events Content/Ads/ads4.png" alt="Donate to Help Refugee">
+                    <p>Donate to Help Refugee</p>
+                </div>
+            </a>
+            <a href="https://www.unrwausa.org/start-a-fundraiser" target="_blank">
+                <div class="ad">
+                    <img src="Events Content/Ads/ads5.png" alt="Volunteer & Make a Difference">
+                    <p>Volunteer & Make a Difference</p>
+                </div>
+            </a>
+            <a href="https://rideforpalestine.com/fundraising/" target="_blank">
+                <div class="ad">
+                    <img src="Events Content/Ads/ads6.png" alt="Donate to Help Refugee">
+                    <p>Donate to Help Refugee</p>
+                </div>
+            </a>
+        </aside>
+
+        <main>
+            <div class="container">
+                <video controls autoplay muted loop>
+                    <source src="Events Content/Video/Palestinians make their way after Israeli withdrawal from Netzarim Corridor.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="container" id="webinars">
+                <div class="event">
+                    <img src="Events Content/Content/webinare immage.png" alt="Webinar Event">
+                    <h2>Upcoming Webinars</h2>
+                    <p>Join our expert-led sessions discussing the Palestinian cause and global solidarity efforts.</p>
+                    <ul>
+                        <li>
+                            <strong>Webinar: "History of Palestine"</strong> - March 15, 2025 | 7 PM GMT  
+                            <br>
+                            <a href="https://youtu.be/4Cl_OgPmJp8" target="_blank" style="color: #007bff; text-decoration: none; font-weight: bold;">
+                                Watch on YouTube
+                            </a>
+                        </li>
+                        <li>
+                            <strong>Webinar: "Social Media Activism"</strong> - March 20, 2025 | 6 PM GMT  
+                            <br>
+                            <a href="https://youtu.be/1ckRf2vqPmg" target="_blank" style="color: #007bff; text-decoration: none; font-weight: bold;">
+                                Watch on YouTube
+                            </a>
+                        </li>
+                        <li>
+                            <strong>Webinar: "International Law & Human Rights"</strong> - March 25, 2025 | 8 PM GMT  
+                            <br>
+                            <a href="https://youtu.be/H29nOtZUh3w" target="_blank" style="color: #007bff; text-decoration: none; font-weight: bold;">
+                                Watch on YouTube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container" id="protests">
+                <div class="event">
+                    <img src="Events Content/Content/protestimage.jpg" alt="Protest Event">
+                    <h2>Protests</h2>
+                    <p>Find out about upcoming demonstrations and peaceful protests in support of Palestine.</p>
+                    <ul>
+                        <li><strong>Protest in London</strong> - March 10, 2025 | Trafalgar Square | 2 PM</li>
+                        <li><strong>Protest in New York</strong> - March 12, 2025 | Times Square | 4 PM</li>
+                        <li><strong>Protest in Kuala Lumpur</strong> - March 18, 2025 | Dataran Merdeka | 5 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container" id="discussions">
+                <div class="event">
+                    <img src="Events Content/Content/onlinediscusssionplas.jpg" alt="Online Discussion Event">
+                    <h2>Online Discussions</h2>
+                    <p>Engage in meaningful conversations and share ideas on how to support Palestine online.</p>
+                    <ul>
+                        <li>
+                            <strong>Twitter Space: 
+                                <a href="https://x.com/nadplo" target="_blank" style="color: #2b00ff; text-decoration: none; font-weight: bold;">
+                                    "Voices for Palestine"
+                                </a>
+                            </strong> - March 14, 2025 | 9 PM GMT
+                        </li>
+                        <li>
+                            <strong>Reddit AMA: 
+                                <a href="https://www.reddit.com/r/Palestine/top/?rdt=42702" target="_blank" style="color: #2b00ff; text-decoration: none; font-weight: bold;">
+                                    "Ask a Palestinian"
+                                </a>
+                            </strong> - March 22, 2025 | 6 PM GMT
+                        </li>
+                        <li>
+                            <strong>Youtube Live:
+                                <a href="https://www.facebook.com/YOUR_PAGE/videos/YOUR_VIDEO_ID" style="color: #2b00ff; text-decoration: none; font-weight: bold;">
+                                    "Solidarity Strategies"
+                                </a>
+                            </strong> - March 28, 2025 | 7 PM GMT
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="countdown" style="text-align: center;">Countdown Timer</div>
+            <div class="donation-container">
+                <p style="margin: 0; font-size: 16px;">Support Relief Efforts – Your donation can make a difference.</p><br>
+                <a href="https://www.paypal.com/donate" target="_blank">Donate Now</a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <!-- Left Side: Logo and Footer Text -->
+        <div class="footer-section">
+            <div class="logo">
+                <img src="logo.png" alt="logo" width="100" height="100">
+            </div>
+            <div class="footer-text">
+                <p>© 2025 Palestine Rising</p>
+                <p>All rights reserved.</p>
+            </div>
+        </div>
+
+        <!-- Center: Message -->
+        <div class="footer-center">Empowering the Voices of Palestine</div>
+
+        <!-- Right Side: Social Media -->
+        <div class="footer-right">
+            <p>Follow us on social media:</p>
+            <div class="footer-icons">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-x-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        function updateCountdown() {
+            const eventDate = new Date('March 10, 2025 14:00:00').getTime();
+            const now = new Date().getTime();
+            const difference = eventDate - now;
+
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            document.getElementById('countdown').innerText = `Next Protest in ${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds!`;
+        }
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>
+
+
+

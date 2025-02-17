@@ -1,0 +1,371 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #cc0000, #008000);
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #166534;
+    margin-left: auto;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #008000;
+    padding: 15px;
+}
+
+    nav a {
+        color: white;
+        margin: 0 20px;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s;
+    }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        nav a:focus {
+            outline: 2px solid #ffcc00;
+        }
+
+/* Main Content */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* News Section */
+.news {
+    flex: 2;
+    text-align: left;
+    padding-bottom: 140px;
+}
+
+    .news h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+.news-item {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .news-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .news-item h3 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .news-item p {
+        font-size: 14px;
+    }
+
+    .news-item a {
+        color: darkgreen;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .news-item ul {
+        list-style-type: disc; /* Ensures bullet points appear */
+        padding-left: 20px; /* Adds spacing before bullets */
+        margin: 10px 0; /* Adjusts vertical spacing */
+    }
+
+    .news-item li {
+        margin-bottom: 8px; /* Adds spacing between list items */
+        line-height: 1.5; /* Improves readability */
+    }
+
+a[href="https://www.dawn.com/news/1886299"] {
+    text-decoration: underline;
+}
+
+a[href="https://www.dawn.com/news/1886289/what-are-the-main-elements-of-the-gaza-ceasefire-deal"] {
+    text-decoration: underline;
+}
+
+a[href="https://www.dawn.com/news/1887693"] {
+    text-decoration: underline;
+}
+
+a[href="https://www.dawn.com/news/1888808/three-israelis-five-thais-freed-in-exchange-for-110-palestinians"] {
+    text-decoration: underline;
+}
+
+a[href="https://www.dawn.com/news/1890690/hamas-israel-complete-fifth-prisoner-swap"] {
+    text-decoration: underline;
+}
+
+a[href="https://www.dawn.com/news/1886922"] {
+    text-decoration: underline;
+}
+
+a[href="https://www.dawn.com/news/1890632"] {
+    text-decoration: underline;
+}
+
+a[href="https://www.dawn.com/news/1885526/the-multi-billion-dollar-challenge-of-reconstruction"] {
+    text-decoration: underline;
+}
+
+a[href="https://www.mylondon.news/all-about/westminster"] {
+    text-decoration: underline;
+}
+
+a[href="https://www.mylondon.news/all-about/israel-hamas-war"] {
+    text-decoration: underline;
+}
+
+a[href="https://www.theguardian.com/us-news/2025/feb/13/rabbis-ad-trump-gaza-plan"] {
+    text-decoration: underline;
+}
+
+/* Sidebar - Sticky Effect */
+.sidebar {
+    flex: 1;
+    position: sticky;
+    top: 20px; /* Keeps it at a fixed position within the viewport */
+    height: fit-content;
+    align-self: flex-start;
+}
+
+.categories, .newsletter {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .categories h2, .newsletter h2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .categories h3, .newsletter h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .categories ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .categories li {
+        margin-bottom: 5px;
+    }
+
+    .categories a {
+        text-decoration: none;
+        color: darkgreen;
+    }
+
+    .newsletter input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+
+    .newsletter button {
+        width: 100%;
+        padding: 10px;
+        background: darkgreen;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #212325;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.footer-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+    .footer-section .logo img {
+        border-radius: 50%;
+        background-color: #383737;
+        padding: 10px;
+        display: block;
+    }
+
+.footer-text {
+    text-align: left;
+}
+
+/* Footer Center */
+.footer-center {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Social Media Section */
+.footer-right {
+    text-align: right;
+}
+
+    .footer-right p {
+        margin-bottom: 5px;
+    }
+
+/* Footer Social Media Icons */
+.footer-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+    .footer-icons a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 50%;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+        /* Facebook */
+        .footer-icons a.fa-facebook {
+            background-color: #3b5998;
+            color: white;
+        }
+
+            .footer-icons a.fa-facebook:hover {
+                background-color: #2d4373;
+            }
+
+        /* X (Twitter) */
+        .footer-icons a.fa-x-twitter {
+            background-color: black;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+            .footer-icons a.fa-x-twitter:hover {
+                background-color: #222;
+            }
+
+        /* Instagram */
+        .footer-icons a.fa-instagram {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            color: white;
+        }
+
+            .footer-icons a.fa-instagram:hover {
+                filter: brightness(1.2);
+            }
+
+        /* Hover Effect */
+        .footer-icons a:hover {
+            transform: scale(1.2);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Click Effect */
+        .footer-icons a:active {
+            transform: scale(1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .media-box {
+        width: 100%;
+    }
+
+    .prev, .next {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .modal-prev, .modal-next {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .modal-close {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+
+    .media-box .actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
