@@ -30,22 +30,27 @@
             margin-left: auto;
         }
 
-        .nav {
+       nav {
             display: flex;
             justify-content: center;
             background-color: #008000;
-            padding: 18px;
+            padding: 15px;
         }
 
-            .nav a {
+            nav a {
                 color: white;
                 margin: 0 20px;
                 text-decoration: none;
                 font-size: 18px;
+                transition: color 0.3s;
             }
 
-                .nav a:hover {
+                nav a:hover {
                     color: #ffcc00;
+                }
+
+                nav a:focus {
+                    outline: 2px solid #ffcc00;
                 }
 
     
