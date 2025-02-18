@@ -57,7 +57,7 @@ header {
     max-width: 900px;
     margin: 50px auto;
     padding: 20px;
-    padding-bottom: 140px;
+    padding-bottom: 160px; /* Increased bottom padding to avoid footer overlap */
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -113,7 +113,7 @@ h2 {
 }
 
 footer {
-    position: fixed;
+    position: relative; /* Changed from fixed to relative */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -249,5 +249,121 @@ footer {
     .media-box .actions {
         flex-direction: column;
         gap: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav a {
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .section {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .goals-team,
+    .values-impact {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .footer-icons {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav a {
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .section {
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+
+    .goals-team,
+    .values-impact {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .footer-icons {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1025px) {
+    .content {
+        padding: 20px;
+    }
+
+    .section {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .goals-team,
+    .values-impact {
+        flex-direction: row;
+    }
+
+    .footer-section {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .footer-right {
+        text-align: right;
+        margin-top: 0;
+    }
+
+    .footer-icons {
+        justify-content: flex-end;
     }
 }
