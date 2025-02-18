@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+
+    menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("nav-active");
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
     // Initialize each slider-container
     document.querySelectorAll(".slider-container").forEach((container) => {
         let slider = container.querySelector(".slider");
@@ -86,3 +95,15 @@ function openModal(index, modalId) {
         modalPrev.style.display = "none";
     }
 }
+
+// Get all the slide elements
+const slides = document.querySelectorAll('.slide, .modal-slide');
+
+// Add event listener for mobile tap
+slides.forEach(slide => {
+    slide.addEventListener('click', function () {
+        // Toggle the visibility of the hover text
+        this.classList.toggle('show-hover-text');
+    });
+});
+
